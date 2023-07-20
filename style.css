@@ -13,7 +13,7 @@ body {
 .container-fluid{
   height: 60px;
   font:bold;
-  font-weight: 40px;
+  font-weight: 400;
   margin-bottom: 20px;
 }
 
@@ -22,7 +22,7 @@ h1 {
   text-align: center;
   margin-top: 50px;
   margin-bottom:  50px;
-  font-weight: 60px;
+  font-weight: 600;
 }
 
 form {
@@ -85,5 +85,38 @@ form button {
   height: 230px;
   object-fit: cover;
   border-radius: 5px;
+}
+/* Media Queries */
 
+@media screen and (max-width: 1200px) {
+    /* Adjust grid columns to 2 on screens up to 1200px */
+    #search-result {
+        grid-template-columns: 1fr 1fr; /* Two columns */
+    }
+}
+
+@media screen and (max-width: 992px) {
+    /* Adjust grid columns to 2 on screens up to 992px */
+    #search-result {
+        grid-template-columns: 1fr 1fr; /* Two columns */
+    }
+}
+
+@media screen and (max-width: 768px) {
+    /* Adjust grid columns to 1 on screens up to 768px */
+    #search-result {
+        grid-template-columns: 1fr; /* Single column */
+    }
+}
+
+@media screen and (max-width: 480px) {
+    /* Adjust grid columns to 1 on screens up to 480px */
+    #search-result {
+        grid-template-columns: 1fr; /* Single column */
+    }
+
+    /* Adjust form width to 100% on screens up to 480px */
+    form {
+        width: 100%; /* Full width */
+    }
 }
